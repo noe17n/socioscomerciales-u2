@@ -1,1 +1,4 @@
 Un artefacto generado nunca debe versionarse porque es un archivo binario dependiente del entorno local. Incluirlo ocasiona conflictos constantes en fusiones (merges), aumenta innecesariamente el tamano del repositorio y contamina el historial.
+
+-- JUSTIFICACIÓN REVERT VS RESET --
+git revert crea un nuevo commit que anula los cambios respetando el historial previo, ideal para repositorios compartidos. git reset elimina o reescribe el historial, lo cual destruye evidencia y puede causar serios problemas en trabajo colaborativo.
